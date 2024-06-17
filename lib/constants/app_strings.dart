@@ -2,6 +2,8 @@ class AppStrings {
   // API Strings
   static const String baseUrl = "https://randomuser.me/api/";
   static const String perPageRecordsParam = "&results=";
+  static const String genderFilterParam = "&gender=";
+  static const String natFilterParam = "&nat=";
   static const String pageParam = "?page=";
 
 

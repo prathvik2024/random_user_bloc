@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:random_user_bloc/constants/app_strings.dart';
+import 'package:random_user_bloc/features/Home/bloc/home_bloc.dart';
 import 'package:random_user_bloc/features/Home/models/user_model.dart';
 
 class UserListCardView extends StatelessWidget {
@@ -10,7 +11,7 @@ class UserListCardView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.white,
+      color: userModel.gender == GenderType.male.name ? Colors.white : Colors.black12,
       margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 12),
       child: Padding(
         padding: const EdgeInsets.all(10),
